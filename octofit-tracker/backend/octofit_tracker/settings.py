@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from pymongo import MongoClient
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = "django-insecure-7fa0kh9l(=+1329pz&^3e#@cq-dmylkdf=6r7n$jl(c)9^$&07
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'redesigned-space-pancake-6x75pvrp535g6r-8000.app.github.dev']
 
 
 # Application definition
@@ -80,6 +81,8 @@ DATABASES = {
         'NAME': 'octofit_db',
     }
 }
+
+MONGO_DB = MongoClient('mongodb://localhost:27017/')['octofit_db']
 
 
 # Enable CORS
