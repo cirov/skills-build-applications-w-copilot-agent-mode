@@ -73,11 +73,13 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# MongoDB connection using pymongo
-from pymongo import MongoClient
-
-MONGO_CLIENT = MongoClient('mongodb://localhost:27017/')
-MONGO_DB = MONGO_CLIENT['octofit_db']
+# Database configuration for MongoDB using djongo
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'octofit_db',
+    }
+}
 
 
 # Enable CORS
