@@ -57,3 +57,5 @@ In this exercise, you will:
 [Review the GitHub status page](https://www.githubstatus.com/)
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+
+ARCHIVED ON 24 DECEMBER 2025
